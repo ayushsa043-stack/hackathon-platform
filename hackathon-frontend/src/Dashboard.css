@@ -1,0 +1,109 @@
+.page-container {
+  padding: 40px 60px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0d47a1;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  flex: 1;
+}
+
+.primary-btn {
+  background: #0d47a1;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background: #1565c0;
+}
+
+.secondary-btn {
+  background: white;
+  border: 1px solid #0d47a1;
+  color: #0d47a1;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.team-card {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  border-left: 5px solid #0d47a1;
+  margin-bottom: 15px;
+}
+
+.team-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.hackathon-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid orange;
+  margin-bottom: 15px;
+}
+
+
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.blog-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.blog-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 15px;
+  border-left: 5px solid #ff6b00;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.blog-content {
+  color: #444;
+  line-height: 1.6;
+}

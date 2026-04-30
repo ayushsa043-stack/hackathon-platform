@@ -1,0 +1,38 @@
+.footer {
+  background: #0f172a;
+  color: white;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 12px;
+}
+
+.footer-section p {
+  margin: 6px 0;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.footer-section p:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #1e293b;
+  font-size: 14px;
+}
