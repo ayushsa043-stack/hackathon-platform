@@ -24,12 +24,6 @@ A full-stack Hackathon Management System where users can explore hackathons, cre
 
 ---
 
-##  Project Structure
-frontend → React UI  
-backend → Spring Boot APIs  
-
----
-
 ##  How to Run
 
 ### Backend
