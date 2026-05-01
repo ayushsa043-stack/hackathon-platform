@@ -1,6 +1,8 @@
 package com.ayushs.hackathon_management.service;
 
+import com.ayushs.hackathon_management.model.Hackathon;
 import com.ayushs.hackathon_management.model.Team;
+import com.ayushs.hackathon_management.repository.HackathonRepository;
 import com.ayushs.hackathon_management.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +15,22 @@ public class TeamService {
     @Autowired
     private TeamRepository repository;
 
+    @Autowired
+    private HackathonRepository hackathonRepository;
+
     public Team saveTeam(Team team) {
+
+        Long hackathonId = team.getHackathon().getId();
+
+        Hackathon hackathon = hackathonRepository.findById(hackathonId)
+                .orElseThrow(() -> new RuntimeException("Hackathon not found"));
+
+        team.setHackathon(hackathon);
+
+        if (!team.getMembers().contains(team.getLeader())) {
+            team.getMembers().add(team.getLeader());
+        }
+
         return repository.save(team);
     }
 
@@ -63,7 +80,6 @@ public class TeamService {
         return repository.save(team);
     }
 
-    // ✅ ADD THIS METHOD
     public void deleteTeam(Long id) {
         if (!repository.existsById(id)) {
             throw new RuntimeException("Team not found");

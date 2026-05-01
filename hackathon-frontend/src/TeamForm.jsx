@@ -13,7 +13,7 @@ function TeamForm() {
       name: name,
       leader: leader,
       hackathon: {
-        id: hackathonId,
+        id: Number(hackathonId),
       },
     };
 
@@ -29,8 +29,6 @@ function TeamForm() {
       setName("");
       setLeader("");
       setHackathonId("");
-
-      window.location.reload();
     } catch (error) {
       console.error(error);
       alert("Error creating team");
